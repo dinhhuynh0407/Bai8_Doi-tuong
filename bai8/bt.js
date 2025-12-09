@@ -1,9 +1,9 @@
-//Tạo đối tượng thuVien
+// 1.Tạo đối tượng thuVien
 const thuVien = {
     //Tạo thuộc tính danhSachSach
     danhSachSach: [],
   
-    //Tạo phương thức themSach
+    // 2.Tạo phương thức themSach
     themSach: function (tieuDe, tacGia, namXuatBan) {
       //Tạo một đối tượng mới là sach với các thông tin
       const sach = {
@@ -18,7 +18,7 @@ const thuVien = {
       console.log(`Đã thêm sách có tiêu đề: ${tieuDe}`); //In thông tin
     },
   
-    //Tạo phương thức timSach
+    // 3.Tạo phương thức timSach
     timSach: function (tieuDe) {
       //Tạo đối tượng sach để duyệt qua danhSachSach để kiểm tra tiêu đề
       const sach = this.danhSachSach.find((found) => found.tieuDe === tieuDe);
@@ -26,7 +26,7 @@ const thuVien = {
       else return null; //Không tìm thấy thì trả về giá trị null
     },
   
-    //Tạo phương thức muonSach
+    // 4.Tạo phương thức muonSach
     muonSach: function (tieuDe) {
       //Tạo đối tượng sach để gán giá trị đã trả về trong phương thức timSach
       const sach = this.timSach(tieuDe);
@@ -43,3 +43,4 @@ const thuVien = {
       }
     },
   };
+
