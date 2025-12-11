@@ -43,5 +43,15 @@ const thuVien = {
       }
     },
   };
+                    // Cách Test
+// thêm sách : thuVien.themSach("JavaScript Cơ Bản", "Nguyễn Văn A", 2023); 
+//in ra : Đã thêm sách có tiêu đề: "JavaScript Cơ Bản"
+
+// mượn sách : thuVien.muonSach("JavaScript Cơ Bản");
+// in ra : Mượn thành công sách có tiêu đề: "JavaScript Cơ Bản"
+
+// Kiểm tra danh sách sách: console.log(thuVien.danhSachSach);
+// Console sẽ in ra mảng chứa sách đã thêm :
+// [  { tieuDe: "JavaScript Cơ Bản", tacGia: "Nguyễn Văn A", namXuatBan: 2023, daMuon: true } ] 
 
 
